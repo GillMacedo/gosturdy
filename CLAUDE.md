@@ -20,4 +20,4 @@ Claude Code skill and Go CLI that finds production risks in Go services.
 - Don't say a service is production ready.
 
 ## Definition of done
-`make test` and `make lint` pass, and `CHANGELOG.md`, `ROADMAP.md` and docs are updated when relevant.
+`make test` and `make lint` pass, and `ROADMAP.md` and docs are updated when relevant.
