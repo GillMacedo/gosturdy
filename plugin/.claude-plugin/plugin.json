@@ -1,0 +1,13 @@
+{
+  "name": "gosturdy",
+  "version": "0.1.0",
+  "description": "Find production risks in a Go service: missing HTTP timeouts, no graceful shutdown, unlimited database pools, ignored request contexts and unbounded request bodies.",
+  "author": {
+    "name": "Giulliano Macedo",
+    "url": "https://github.com/GillMacedo"
+  },
+  "homepage": "https://github.com/GillMacedo/gosturdy",
+  "repository": "https://github.com/GillMacedo/gosturdy",
+  "license": "MIT",
+  "keywords": ["go", "golang", "production-readiness", "code-review", "graceful-shutdown", "timeouts", "backend"]
+}

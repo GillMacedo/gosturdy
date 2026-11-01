@@ -1,0 +1,14 @@
+{
+  "name": "gosturdy-marketplace",
+  "description": "Marketplace for gosturdy, which finds production risks in Go services.",
+  "owner": {
+    "name": "Giulliano Macedo"
+  },
+  "plugins": [
+    {
+      "name": "gosturdy",
+      "source": "./plugin",
+      "description": "Find production risks in a Go service: missing timeouts, no graceful shutdown, unlimited database pools and more."
+    }
+  ]
+}

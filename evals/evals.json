@@ -1,0 +1,28 @@
+[
+  {
+    "skills": ["reviewing-go-services"],
+    "query": "Is this Go service ready for production?",
+    "expected_behavior": [
+      "Runs gosturdy.go on the service",
+      "Reads the code for each finding and says which were confirmed or dismissed",
+      "Doesn't call it production ready because of a clean result, and names what wasn't checked"
+    ]
+  },
+  {
+    "skills": ["reviewing-go-services"],
+    "query": "We drop requests every time we deploy this Go API. Why?",
+    "expected_behavior": [
+      "Runs the tool and looks at shutdown findings GS301 and GS302",
+      "Also mentions Kubernetes settings it can't see, such as the termination grace period",
+      "Doesn't edit code without being asked"
+    ]
+  },
+  {
+    "skills": ["reviewing-go-services"],
+    "query": "gosturdy flags our pprof ListenAndServe. Can you just ignore it?",
+    "expected_behavior": [
+      "Checks whether that port is public",
+      "Adds an ignore comment with a reason only if the user accepts the risk"
+    ]
+  }
+]
